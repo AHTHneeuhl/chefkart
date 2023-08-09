@@ -1,5 +1,7 @@
+import { AppRoutes } from "routes";
+
 const App: React.FC = () => {
-  return null;
+  return <AppRoutes />;
 };
 
 export default App;
