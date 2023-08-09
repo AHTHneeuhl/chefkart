@@ -1,23 +1,20 @@
 const colors = {
   white: "#FFFFFF",
   black: "#000000",
-  alpha: "#355FA3",
-  success: "#4ECE00",
-  error: "#EA4335",
-  darkGrey: "#5F5F5F",
-  lightGrey: "#868686",
-  placeHolder: "#CACACA",
-  extraLightGrey: "#E9E9E9",
-  ghostWhite: "#F9F9F9",
-  milk: "#F7FFF4",
-  ultraMarineBlue: "#3768ED",
+  pizazz: "#FF8800",
+  westSide: "#FF941A",
+  codGray: "#1C1C1C",
+  mineShaft: "#242424",
+  gray: "#8A8A8A",
+  doveGray: "#707070",
+  silverChalice: "#A3A3A3",
+  silver: "#BDBDBD",
+  wildSand: "#F5F5F5",
+  emerald: "#51C452",
 };
 
 const fonts = {
-  playfair: `'Playfair Display', serif`,
-  poppins: `'Poppins', sans-serif`,
-  roboto: `'Roboto', sans-serif`,
-  montserrat: `'Montserrat', sans-serif`,
+  openSans: `'Open Sans', sans-serif`,
 };
 
 export const theme = {
