@@ -4,11 +4,11 @@ import Font from "./font";
 class ThemeHelper {
   font = new Font();
 
-  getFontSize = this.font.getFontSize();
+  getFontSize = this.font.getFontSize;
 
-  getFontWeight = this.font.getFontWeight();
+  getFontWeight = this.font.getFontWeight;
 
-  getLineHeight = this.font.getLineHeight();
+  getLineHeight = this.font.getLineHeight;
 
   centerContent = () => {
     return css`

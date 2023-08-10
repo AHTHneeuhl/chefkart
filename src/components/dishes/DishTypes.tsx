@@ -14,8 +14,8 @@ const dishTypes = ["Italian", "Indian", "Mexican", "Chinese", "Korean"];
 const DishTypes: React.FC = () => {
   return (
     <StyledDishTypes>
-      {dishTypes.map((type) => (
-        <DishType key={type} content={type} />
+      {dishTypes.map((type, index) => (
+        <DishType key={type} content={type} active={index === 0} />
       ))}
     </StyledDishTypes>
   );

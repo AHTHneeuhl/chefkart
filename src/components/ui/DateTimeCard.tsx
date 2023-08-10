@@ -8,7 +8,7 @@ const StyledCard = styled.div`
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 4px #d6d6d69e;
   border-radius: 9px;
-  padding: 24px;
+  padding: 21px;
 
   display: flex;
   align-items: center;
@@ -28,11 +28,11 @@ const DateTimeCard: React.FC = () => {
     <StyledCard>
       <StyledDate>
         <CalendarIcon />
-        <Typography as="h3" content="21 May 2021" />
+        <Typography as="h3" fontWeight="bold" content="21 May 2021" />
       </StyledDate>
       <StyledTime>
         <ClockIcon />
-        <Typography as="h3" content="10:30 Pm-12:30 Pm" />
+        <Typography as="h3" fontWeight="bold" content="10:30 Pm-12:30 Pm" />
       </StyledTime>
     </StyledCard>
   );

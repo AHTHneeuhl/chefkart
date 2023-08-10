@@ -1,4 +1,4 @@
-import { DefaultFonts } from "styled-components";
+import { DefaultColors, DefaultFonts } from "styled-components";
 
 export type TFontSizes = {
   none: number;
@@ -31,3 +31,7 @@ export type TFontProps = {
   font?: keyof DefaultFonts;
   fontWeight?: keyof TFontWeights;
 };
+
+export interface IDesignSystemProps extends TFontProps {
+  variant?: keyof DefaultColors;
+}

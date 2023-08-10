@@ -15,8 +15,8 @@ type TProps = {
 const Stat: React.FC<TProps> = ({ name, quantity }) => {
   return (
     <StyledStat>
-      <Typography content={name} />
-      <Typography content={quantity} />
+      <Typography size="xs" content={name} />
+      <Typography size="xs" content={quantity} />
     </StyledStat>
   );
 };
