@@ -29,8 +29,7 @@ type TStyledTextProps = {
 };
 
 const StyledText = styled.div<TStyledTextProps>`
-  width: 34px;
-  height: 14px;
+  position: absolute;
   text-align: center;
   font-size: 10px;
   line-height: 14px;
@@ -38,6 +37,14 @@ const StyledText = styled.div<TStyledTextProps>`
   color: #ffffff;
   font-weight: 600;
   opacity: 1;
+`;
+
+const StyledPicture = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.25;
 `;
 
 type TProps = {
@@ -49,6 +56,7 @@ type TProps = {
 const PopularDish: React.FC<TProps> = ({ name, image, active = false }) => {
   return (
     <StyledDish active={active}>
+      <StyledPicture src={image} alt={name} />
       <StyledText active={active}>{name}</StyledText>
     </StyledDish>
   );
