@@ -10,7 +10,12 @@ import ingredients from "assets/ingredients2x.png";
 const helper = new ThemeHelper();
 
 const StyledContainer = styled.div`
+  margin: 2.5rem 0;
   ${helper.betweenContent()};
+
+  @media screen and (max-width: 475px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledPicture = styled.img`

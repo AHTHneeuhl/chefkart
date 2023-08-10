@@ -3,11 +3,15 @@ import { useDish } from "hooks";
 import { useParams } from "react-router-dom";
 import { styled } from "styled-components";
 
-const StyledContainer = styled.div``;
+const StyledContainer = styled.div`
+  margin: 0.75rem 0;
+`;
 
 const StyledVegetables = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  margin-top: 0.75rem;
 `;
 
 const Spices: React.FC = () => {
