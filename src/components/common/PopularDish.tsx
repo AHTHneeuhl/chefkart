@@ -41,14 +41,15 @@ const StyledText = styled.div<TStyledTextProps>`
 `;
 
 type TProps = {
-  content: string;
+  name: string;
+  image: string;
   active?: boolean;
 };
 
-const PopularDish: React.FC<TProps> = ({ content, active = false }) => {
+const PopularDish: React.FC<TProps> = ({ name, image, active = false }) => {
   return (
     <StyledDish active={active}>
-      <StyledText active={active}>{content}</StyledText>
+      <StyledText active={active}>{name}</StyledText>
     </StyledDish>
   );
 };

@@ -1,10 +1,12 @@
-import { useDishes } from "hooks";
+import { Dishes, PopularDishes } from "components";
 
 const Home: React.FC = () => {
-  const { dishes, isLoading } = useDishes();
-  console.log(dishes, isLoading);
-
-  return null;
+  return (
+    <>
+      <PopularDishes />
+      <Dishes />
+    </>
+  );
 };
 
 export default Home;
