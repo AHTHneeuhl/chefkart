@@ -8,6 +8,7 @@ const StyledContainer = styled.div``;
 const StyledAppliances = styled.div`
   display: flex;
   align-items: center;
+  gap: 21px;
 `;
 
 const Appliances: React.FC = () => {

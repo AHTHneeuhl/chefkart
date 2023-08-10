@@ -18,7 +18,10 @@ const Vegetables: React.FC = () => {
 
   return (
     <StyledContainer>
-      <Typography content="Vegetables" />
+      <Typography
+        as="h4"
+        content={`Vegetables (${dish?.ingredients.vegetables.length})`}
+      />
       <StyledVegetables>
         {dish?.ingredients.vegetables.map(({ name, quantity }) => (
           <Stat key={name} name={name} quantity={quantity} />

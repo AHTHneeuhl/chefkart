@@ -4,6 +4,9 @@ import { Typography } from "components/common";
 const StyledDish = styled.div`
   width: 307px;
   height: 89px;
+
+  display: flex;
+  justify-content: space-between;
 `;
 
 const StyledContent = styled.div`
@@ -14,6 +17,7 @@ const StyledContent = styled.div`
 const StyledDishPicture = styled.img`
   width: 92px;
   height: 68px;
+  object-fit: cover;
   border-radius: 6px;
 `;
 
@@ -40,6 +44,8 @@ const Dish: React.FC<TProps> = ({
   return (
     <StyledDish>
       <StyledContent>
+        <Typography as="h4" content={name} />
+        <Typography content={rating} />
         <Typography content={description} />
       </StyledContent>
       <PicWrapper>

@@ -4,7 +4,8 @@ import { styled } from "styled-components";
 
 const StyledDishes = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 40px;
 `;
 
 const Dishes: React.FC = () => {

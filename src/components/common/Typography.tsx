@@ -3,7 +3,7 @@ import styled from "styled-components";
 type TProps = {
   as?: keyof JSX.IntrinsicElements;
   style?: React.CSSProperties;
-  content: string;
+  content: string | number;
 };
 
 const StyledText = styled.p`
