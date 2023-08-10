@@ -17,6 +17,14 @@ class ThemeHelper {
       align-items: center;
     `;
   };
+
+  betweenContent = () => {
+    return css`
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    `;
+  };
 }
 
 export default ThemeHelper;
