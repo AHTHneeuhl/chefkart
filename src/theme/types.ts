@@ -18,9 +18,12 @@ export type TFontWeights = {
 };
 
 export type TLineHeights = {
-  small: number;
-  medium: number;
-  large: number;
+  none: number;
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
 };
 
 export type TFontProps = {
