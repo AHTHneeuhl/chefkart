@@ -3,11 +3,11 @@ import { TFontSizes, TFontWeights, TLineHeights } from "./types";
 
 class Font {
   private fontSizes: TFontSizes = {
-    xs: 80,
-    sm: 100,
-    md: 140,
-    lg: 180,
-    xl: 220,
+    xs: 14,
+    sm: 16,
+    md: 18,
+    lg: 20,
+    xl: 24,
     none: 0,
   };
 
@@ -20,20 +20,27 @@ class Font {
   };
 
   private lineHeights: TLineHeights = {
-    small: 100,
-    medium: 130,
-    large: 160,
+    xs: 11,
+    sm: 15,
+    md: 18,
+    lg: 21,
+    xl: 24,
+    none: 0,
   };
 
-  getFontSize = (value: keyof TFontSizes = "sm") => {
+  getFontSize = (value: keyof TFontSizes | number = "sm") => {
+    const fontSize =
+      typeof value === "number" ? value + "px" : this.fontSizes[value] + "px";
     return css`
-      font-size: ${this.fontSizes[value] / 100 + "rem"};
+      font-size: ${fontSize};
     `;
   };
 
-  getLineHeight = (value: keyof TLineHeights = "small") => {
+  getLineHeight = (value: keyof TLineHeights | number = "sm") => {
+    const lineHeight =
+      typeof value === "number" ? value + "px" : this.lineHeights[value] + "px";
     return css`
-      line-height: ${this.lineHeights[value] + "%"};
+      line-height: ${lineHeight};
     `;
   };
 
