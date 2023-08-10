@@ -19,7 +19,7 @@ const Appliances: React.FC = () => {
 
   return (
     <StyledContainer>
-      <Typography as="h2" content="Appliances" />
+      <Typography as="h2" fontWeight="bold" size="lg" content="Appliances" />
       <StyledAppliances>
         {dish?.ingredients.appliances.map(({ name, image }) => (
           <Appliance key={name} name={name} image={image} />

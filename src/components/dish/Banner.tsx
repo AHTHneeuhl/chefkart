@@ -2,12 +2,27 @@ import { Typography } from "components/common";
 import { useDish } from "hooks";
 import { useParams } from "react-router-dom";
 import { styled } from "styled-components";
+import ThemeHelper from "theme/themeHelper";
 
+import { ReactComponent as ClockIcon } from "assets/icons/clock.svg";
 import ingredients from "assets/ingredients2x.png";
 
-const StyledContainer = styled.div``;
+const helper = new ThemeHelper();
 
-const StyledPicture = styled.img``;
+const StyledContainer = styled.div`
+  ${helper.betweenContent()};
+`;
+
+const StyledPicture = styled.img`
+  height: 132px;
+`;
+
+const TimeToPrepare = styled.div`
+  ${helper.centerContent()};
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 1rem;
+`;
 
 const Banner: React.FC = () => {
   const { id } = useParams();
@@ -17,8 +32,22 @@ const Banner: React.FC = () => {
 
   return (
     <StyledContainer>
-      <Typography as="h1" content={dish?.name!} />
-      <Typography as="h3" content={dish?.timeToPrepare!} />
+      <div>
+        <Typography as="h1" fontWeight="bold" size="xl" content={dish?.name!} />
+        <Typography
+          variant="silverChalice"
+          size="xs"
+          content="Mughlai Masala is a style of cookery developed in the Indian Subcontinent by the imperial kitchens of the Mughal Empire."
+        />
+        <TimeToPrepare>
+          <ClockIcon />
+          <Typography
+            as="h3"
+            fontWeight="semiBold"
+            content={dish?.timeToPrepare!}
+          />
+        </TimeToPrepare>
+      </div>
       <StyledPicture src={ingredients} alt="ingredients" />
     </StyledContainer>
   );

@@ -20,6 +20,7 @@ const Spices: React.FC = () => {
     <StyledContainer>
       <Typography
         as="h4"
+        fontWeight="bold"
         content={`Spices (${dish?.ingredients.spices.length})`}
       />
       <StyledVegetables>
