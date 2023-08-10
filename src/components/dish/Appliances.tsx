@@ -3,12 +3,15 @@ import { useDish } from "hooks";
 import { useParams } from "react-router-dom";
 import { styled } from "styled-components";
 
-const StyledContainer = styled.div``;
+const StyledContainer = styled.div`
+  margin: 0.75rem 0;
+`;
 
 const StyledAppliances = styled.div`
   display: flex;
   align-items: center;
   gap: 21px;
+  margin-top: 0.75rem;
 `;
 
 const Appliances: React.FC = () => {

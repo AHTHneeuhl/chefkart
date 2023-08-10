@@ -12,8 +12,8 @@ const Home: React.FC = () => {
     <Main>
       <DateTimeCard />
       <DishTypes />
-      <Recommended />
       <PopularDishes />
+      <Recommended />
       <Dishes />
       <Cart />
     </Main>

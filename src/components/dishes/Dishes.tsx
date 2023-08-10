@@ -6,6 +6,7 @@ const StyledDishes = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 0.75rem 0;
 `;
 
 const Dishes: React.FC = () => {
